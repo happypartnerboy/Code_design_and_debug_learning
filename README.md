@@ -1,0 +1,2 @@
+# Code_design_and_debug_learning
+主要学习如何使用GDB等各种Linux调试工具，设计模式，多线程设计能力，重构能力，接口设计能力
