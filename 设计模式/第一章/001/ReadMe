@@ -1,8 +1,0 @@
-#v1.0.0
-实现:
-    超类DUCK
-        实现:swim Quack
-
-子类:                               子类:                             子类:
-    CRedheadDuck                        CRubberDuck                     CMallardDuck
-实现display                         实现display                        实现display
