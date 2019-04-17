@@ -14,3 +14,8 @@ int CDuck::Quack()
     cout << "I am Quacking" <<endl;
     return 0;
 }
+
+void CDuck::perforFly()
+{
+    flyBehavior->fly();
+}

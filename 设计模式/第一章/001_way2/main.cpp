@@ -14,7 +14,12 @@ int main()
     Duck->Display();     
     Duck->Swim();
     Duck->Quack();
-    Duck->Flay();
+    Duck->perforFly();
     MallardDuck.Test();
+    Duck  = (CRubberDuck *)&RubberDuck;
+    Duck->Display();     
+    Duck->Swim();
+    Duck->Quack();
+    Duck->perforFly();
     cout << "hello word" << endl;
 }
