@@ -22,6 +22,11 @@ public:
     int Swim();
 	//呱呱的叫 
     int Quack();
+    //飞行
+    virtual int Flay()
+    {
+        return 0;
+    }
     //鸭子的会话函数
 	virtual int Display() = 0;
 };

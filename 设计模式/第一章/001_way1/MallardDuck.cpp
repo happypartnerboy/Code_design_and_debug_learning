@@ -14,3 +14,8 @@ int CMallardDuck::Test()
     return 0;
 }
 
+int CMallardDuck::Flay()
+{
+    cout <<"Flaying "<<endl;
+    return 0;
+}

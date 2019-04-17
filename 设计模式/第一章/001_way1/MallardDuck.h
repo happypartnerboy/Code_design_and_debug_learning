@@ -5,6 +5,7 @@ class CMallardDuck:public CDuck
 {
 public:
     int Display(); 
+    int Flay();
     int Test(); 
 };
 #endif
