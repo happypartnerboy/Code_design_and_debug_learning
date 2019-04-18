@@ -17,5 +17,5 @@ int CDuck::Quack()
 
 void CDuck::perforFly()
 {
-    flyBehavior->fly();
+    m_pflyBehavior->fly();
 }

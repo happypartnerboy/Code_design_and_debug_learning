@@ -6,7 +6,7 @@ class CMallardDuck:public CDuck
 public:
     CMallardDuck()
     {
-        flyBehavior = new CFlyTurnWay; 
+        m_pflyBehavior = new CFlyTurnWay; 
     };
 public:
     int Display(); 

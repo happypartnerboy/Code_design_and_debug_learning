@@ -54,7 +54,7 @@ public:
 
 	CDuck()
     {
-        flyBehavior = new CFlyNoWay();  //默认不会飞
+        m_pflyBehavior = new CFlyNoWay();  //默认不会飞
     };
 	virtual ~CDuck()
     {
@@ -69,8 +69,13 @@ public:
 	virtual int Display() = 0;
 
     void perforFly();
+
+    void SetPerfomFly(CFlyBehavior *m_pflyBehaviorValue)
+    {
+        m_pflyBehavior = m_pflyBehaviorValue;
+    }
 public:
-    CFlyBehavior *flyBehavior;//接口
+    CFlyBehavior *m_pflyBehavior;//接口
 };
 
 #endif

@@ -21,5 +21,7 @@ int main()
     Duck->Swim();
     Duck->Quack();
     Duck->perforFly();
-    cout << "hello word" << endl;
+    cout << "hello word" << endl;   
+    Duck->SetPerfomFly(new CFlyTurnWay());
+    Duck->perforFly();
 }
