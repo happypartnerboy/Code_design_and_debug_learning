@@ -5,21 +5,24 @@ using namespace std;
 
 void ConcreteSubject::removejoiner(ObserverBase *joiner) 
 {
-   m_PsubscriptionList.push_back(joiner);
+    m_PsubscriptionList.push_back(joiner);
 }
 
 
 
 void ConcreteSubject::removeObserver(ObserverBase *remove) 
 {
-  
     list<ObserverBase *>::iterator it;
-    for(it = m_PsubscriptionList.begin(); it != m_PsubscriptionList.end(); ++it)
+    for(it = m_PsubscriptionList.begin(); it != m_PsubscriptionList.end();)
     {
-        if(remove ==*it)
-        {
-            m_PsubscriptionList.remove(remove);
-        }
+            if(remove == *it)
+            {
+                m_PsubscriptionList.erase(it++);
+            }
+           else
+            {
+                ++it;
+            }
     }
    
 }
@@ -34,7 +37,6 @@ void ConcreteSubject::notifyObserver()
      }
 
     //遍历链表的问题
-    
 }
 
 

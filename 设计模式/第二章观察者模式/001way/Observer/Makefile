@@ -17,7 +17,8 @@ LIBNAME=$(notdir $(MPATH))
 #最终存放库的目录
 LIBDIR=../LIB	
 BIN=lib$(LIBNAME).a
-RELEASE_DIR=RELEASE-arm-static
+#RELEASE_DIR=RELEASE-arm-static
+RELEASE_DIR=../bin
 RELEASE_TARGET=$(RELEASE_DIR)/$(BIN)
 #当前 目录中
 OBJECTS=$(patsubst %.c, %.o, $(wildcard *.c)) 

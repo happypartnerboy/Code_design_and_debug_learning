@@ -6,19 +6,19 @@
 using namespace std;
 class ConcreteSubject:SbjectBash
 {
-public:
-    int resource; 
-    list<ObserverBase *>	m_PsubscriptionList;	
-	ConcreteSubject(){
-        resource = 0;
-    };
-	virtual ~ConcreteSubject()
-    {
+    public:
+        int resource; 
+        list<ObserverBase *>	m_PsubscriptionList;	
+        ConcreteSubject(){
+            resource = 0;
+        };
+        virtual ~ConcreteSubject()
+        {
 
-    };
-public:
-    void removejoiner(ObserverBase *joiner);  	
-    void removeObserver(ObserverBase * remove);
-    void notifyObserver() ;
+        };
+    public:
+        void removejoiner(ObserverBase *joiner);  	
+        void removeObserver(ObserverBase * remove);
+        void notifyObserver() ;
 };
 #endif 
