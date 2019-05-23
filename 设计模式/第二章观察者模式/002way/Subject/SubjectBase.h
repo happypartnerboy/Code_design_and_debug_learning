@@ -22,4 +22,20 @@ class SbjectBash
         virtual void removejoiner(ObserverBase *joiner) = 0;           
         virtual void notifyObserver() = 0;
 };
+
+class SbjectBash
+{
+    public:
+        SbjectBash(){};
+        virtual ~SbjectBash()
+        {
+
+        };
+    public:
+        virtual void removeObserver(ObserverBase *remove) = 0; 
+        virtual void removejoiner(ObserverBase *joiner) = 0;           
+        virtual void notifyObserver() = 0;
+};
+
+
 #endif     
