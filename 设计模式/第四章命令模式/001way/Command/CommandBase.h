@@ -7,7 +7,7 @@
 */
 #ifndef _COMMANDBASE_
 #define _COMMANDBASE_
-#include "../Receiver/Receiver.h"
+#include "../Receiver/Receiver.h" 
 class CommandBase
 {
 	public:
@@ -15,7 +15,7 @@ class CommandBase
 	public:
 		CommandBase(BarbecueMaster * p)
 		{
-			mp_chif = p;		
+			mp_chif = p;	//huxiaoguag	
 		}
 	virtual void executeCmd() = 0;		//声明为纯虚函数
 };
