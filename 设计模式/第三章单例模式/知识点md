@@ -1,0 +1,60 @@
+https://blog.csdn.net/u010029439/article/details/79439176
+
+public MyClass 
+
+{
+
+​	private MyClass(){
+
+​	}
+
+}
+
+
+
+pulic MyClass
+
+{
+
+​	public static MyClass getInstance()
+
+​	{
+
+​	}
+
+}
+
+
+
+public MyClass
+
+{
+
+​	private MyClass()
+
+​	{	
+
+​	}
+
+​	public static MyClass getInstance()
+
+​	{
+
+​		return New MyClass ()
+
+​	}
+
+}
+
+
+
+常用的方法:
+
+​	public class 
+
+
+
+问题:如何确保只有一个单例模式
+
+![单例模式](F:\picture_res\设计模式\单例模式.png)
+

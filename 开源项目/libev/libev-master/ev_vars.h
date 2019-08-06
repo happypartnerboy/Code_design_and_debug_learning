@@ -36,10 +36,12 @@
  * provisions above, a recipient may use your version of this file under
  * either the BSD or the GPL.
  */
-
 #define VARx(type,name) VAR(name, type name)
 
 VARx(ev_tstamp, now_floor) /* last time we refreshed rt_time */
+	ev_tstamp (loop)->now_floor ;
+
+
 VARx(ev_tstamp, mn_now)    /* monotonic clock "now" */
 VARx(ev_tstamp, rtmn_diff) /* difference realtime - monotonic time */
 

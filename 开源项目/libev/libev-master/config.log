@@ -59,20 +59,20 @@ configure:2622: checking whether make sets $(MAKE)
 configure:2644: result: yes
 configure:2673: checking whether make supports nested variables
 configure:2690: result: yes
-configure:2819: checking whether to enable maintainer-specific portions of Makefiles
-configure:2828: result: no
-configure:2890: checking for gcc
-configure:2906: found /usr/bin/gcc
-configure:2917: result: gcc
-configure:3146: checking for C compiler version
-configure:3155: gcc --version >&5
+configure:2820: checking whether to enable maintainer-specific portions of Makefiles
+configure:2829: result: no
+configure:2891: checking for gcc
+configure:2907: found /usr/bin/gcc
+configure:2918: result: gcc
+configure:3147: checking for C compiler version
+configure:3156: gcc --version >&5
 gcc (Ubuntu 4.8.2-19ubuntu1) 4.8.2
 Copyright (C) 2013 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-configure:3166: $? = 0
-configure:3155: gcc -v >&5
+configure:3167: $? = 0
+configure:3156: gcc -v >&5
 Using built-in specs.
 COLLECT_GCC=gcc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/i686-linux-gnu/4.8/lto-wrapper
@@ -80,151 +80,151 @@ Target: i686-linux-gnu
 Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.2-19ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.8 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libmudflap --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.8-i386/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.8-i386 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.8-i386 --with-arch-directory=i386 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-targets=all --enable-multiarch --disable-werror --with-arch-32=i686 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=i686-linux-gnu --host=i686-linux-gnu --target=i686-linux-gnu
 Thread model: posix
 gcc version 4.8.2 (Ubuntu 4.8.2-19ubuntu1) 
-configure:3166: $? = 0
-configure:3155: gcc -V >&5
+configure:3167: $? = 0
+configure:3156: gcc -V >&5
 gcc: error: unrecognized command line option '-V'
 gcc: fatal error: no input files
 compilation terminated.
-configure:3166: $? = 4
-configure:3155: gcc -qversion >&5
+configure:3167: $? = 4
+configure:3156: gcc -qversion >&5
 gcc: error: unrecognized command line option '-qversion'
 gcc: fatal error: no input files
 compilation terminated.
-configure:3166: $? = 4
-configure:3186: checking whether the C compiler works
-configure:3208: gcc    conftest.c  >&5
-configure:3212: $? = 0
-configure:3260: result: yes
-configure:3263: checking for C compiler default output file name
-configure:3265: result: a.out
-configure:3271: checking for suffix of executables
-configure:3278: gcc -o conftest    conftest.c  >&5
-configure:3282: $? = 0
-configure:3304: result: 
-configure:3326: checking whether we are cross compiling
-configure:3334: gcc -o conftest    conftest.c  >&5
-configure:3338: $? = 0
-configure:3345: ./conftest
-configure:3349: $? = 0
-configure:3364: result: no
-configure:3369: checking for suffix of object files
-configure:3391: gcc -c   conftest.c >&5
-configure:3395: $? = 0
-configure:3416: result: o
-configure:3420: checking whether we are using the GNU C compiler
-configure:3439: gcc -c   conftest.c >&5
-configure:3439: $? = 0
-configure:3448: result: yes
-configure:3457: checking whether gcc accepts -g
-configure:3477: gcc -c -g  conftest.c >&5
-configure:3477: $? = 0
-configure:3518: result: yes
-configure:3535: checking for gcc option to accept ISO C89
-configure:3598: gcc  -c -g -O2  conftest.c >&5
-configure:3598: $? = 0
-configure:3611: result: none needed
-configure:3636: checking whether gcc understands -c and -o together
-configure:3658: gcc -c conftest.c -o conftest2.o
-configure:3661: $? = 0
-configure:3658: gcc -c conftest.c -o conftest2.o
-configure:3661: $? = 0
-configure:3673: result: yes
-configure:3701: checking for style of include used by make
-configure:3729: result: GNU
-configure:3755: checking dependency style of gcc
-configure:3866: result: gcc3
-configure:3918: checking build system type
-configure:3932: result: i686-pc-linux-gnu
-configure:3952: checking host system type
-configure:3965: result: i686-pc-linux-gnu
-configure:4006: checking how to print strings
-configure:4033: result: printf
-configure:4054: checking for a sed that does not truncate output
-configure:4118: result: /bin/sed
-configure:4136: checking for grep that handles long lines and -e
-configure:4194: result: /bin/grep
-configure:4199: checking for egrep
-configure:4261: result: /bin/grep -E
-configure:4266: checking for fgrep
-configure:4328: result: /bin/grep -F
-configure:4363: checking for ld used by gcc
-configure:4430: result: /usr/bin/ld
-configure:4437: checking if the linker (/usr/bin/ld) is GNU ld
-configure:4452: result: yes
-configure:4464: checking for BSD- or MS-compatible name lister (nm)
-configure:4513: result: /usr/bin/nm -B
-configure:4643: checking the name lister (/usr/bin/nm -B) interface
-configure:4650: gcc -c -g -O3  conftest.c >&5
-configure:4653: /usr/bin/nm -B "conftest.o"
-configure:4656: output
+configure:3167: $? = 4
+configure:3187: checking whether the C compiler works
+configure:3209: gcc    conftest.c  >&5
+configure:3213: $? = 0
+configure:3261: result: yes
+configure:3264: checking for C compiler default output file name
+configure:3266: result: a.out
+configure:3272: checking for suffix of executables
+configure:3279: gcc -o conftest    conftest.c  >&5
+configure:3283: $? = 0
+configure:3305: result: 
+configure:3327: checking whether we are cross compiling
+configure:3335: gcc -o conftest    conftest.c  >&5
+configure:3339: $? = 0
+configure:3346: ./conftest
+configure:3350: $? = 0
+configure:3365: result: no
+configure:3370: checking for suffix of object files
+configure:3392: gcc -c   conftest.c >&5
+configure:3396: $? = 0
+configure:3417: result: o
+configure:3421: checking whether we are using the GNU C compiler
+configure:3440: gcc -c   conftest.c >&5
+configure:3440: $? = 0
+configure:3449: result: yes
+configure:3458: checking whether gcc accepts -g
+configure:3478: gcc -c -g  conftest.c >&5
+configure:3478: $? = 0
+configure:3519: result: yes
+configure:3536: checking for gcc option to accept ISO C89
+configure:3599: gcc  -c -g -O2  conftest.c >&5
+configure:3599: $? = 0
+configure:3612: result: none needed
+configure:3637: checking whether gcc understands -c and -o together
+configure:3659: gcc -c conftest.c -o conftest2.o
+configure:3662: $? = 0
+configure:3659: gcc -c conftest.c -o conftest2.o
+configure:3662: $? = 0
+configure:3674: result: yes
+configure:3702: checking for style of include used by make
+configure:3730: result: GNU
+configure:3756: checking dependency style of gcc
+configure:3867: result: gcc3
+configure:3919: checking build system type
+configure:3933: result: i686-pc-linux-gnu
+configure:3953: checking host system type
+configure:3966: result: i686-pc-linux-gnu
+configure:4007: checking how to print strings
+configure:4034: result: printf
+configure:4055: checking for a sed that does not truncate output
+configure:4119: result: /bin/sed
+configure:4137: checking for grep that handles long lines and -e
+configure:4195: result: /bin/grep
+configure:4200: checking for egrep
+configure:4262: result: /bin/grep -E
+configure:4267: checking for fgrep
+configure:4329: result: /bin/grep -F
+configure:4364: checking for ld used by gcc
+configure:4431: result: /usr/bin/ld
+configure:4438: checking if the linker (/usr/bin/ld) is GNU ld
+configure:4453: result: yes
+configure:4465: checking for BSD- or MS-compatible name lister (nm)
+configure:4514: result: /usr/bin/nm -B
+configure:4644: checking the name lister (/usr/bin/nm -B) interface
+configure:4651: gcc -c -g -O3  conftest.c >&5
+configure:4654: /usr/bin/nm -B "conftest.o"
+configure:4657: output
 00000000 B some_variable
-configure:4663: result: BSD nm
-configure:4666: checking whether ln -s works
-configure:4670: result: yes
-configure:4678: checking the maximum length of command line arguments
-configure:4809: result: 1572864
-configure:4826: checking whether the shell understands some XSI constructs
-configure:4836: result: yes
-configure:4840: checking whether the shell understands "+="
-configure:4846: result: yes
-configure:4881: checking how to convert i686-pc-linux-gnu file names to i686-pc-linux-gnu format
-configure:4921: result: func_convert_file_noop
-configure:4928: checking how to convert i686-pc-linux-gnu file names to toolchain format
-configure:4948: result: func_convert_file_noop
-configure:4955: checking for /usr/bin/ld option to reload object files
-configure:4962: result: -r
-configure:5036: checking for objdump
-configure:5052: found /usr/bin/objdump
-configure:5063: result: objdump
-configure:5095: checking how to recognize dependent libraries
-configure:5293: result: pass_all
-configure:5378: checking for dlltool
-configure:5408: result: no
-configure:5438: checking how to associate runtime and link libraries
-configure:5465: result: printf %s\n
-configure:5526: checking for ar
-configure:5542: found /usr/bin/ar
-configure:5553: result: ar
-configure:5590: checking for archiver @FILE support
-configure:5607: gcc -c -g -O3  conftest.c >&5
-configure:5607: $? = 0
-configure:5610: ar cru libconftest.a @conftest.lst >&5
-configure:5613: $? = 0
-configure:5618: ar cru libconftest.a @conftest.lst >&5
+configure:4664: result: BSD nm
+configure:4667: checking whether ln -s works
+configure:4671: result: yes
+configure:4679: checking the maximum length of command line arguments
+configure:4810: result: 1572864
+configure:4827: checking whether the shell understands some XSI constructs
+configure:4837: result: yes
+configure:4841: checking whether the shell understands "+="
+configure:4847: result: yes
+configure:4882: checking how to convert i686-pc-linux-gnu file names to i686-pc-linux-gnu format
+configure:4922: result: func_convert_file_noop
+configure:4929: checking how to convert i686-pc-linux-gnu file names to toolchain format
+configure:4949: result: func_convert_file_noop
+configure:4956: checking for /usr/bin/ld option to reload object files
+configure:4963: result: -r
+configure:5037: checking for objdump
+configure:5053: found /usr/bin/objdump
+configure:5064: result: objdump
+configure:5096: checking how to recognize dependent libraries
+configure:5294: result: pass_all
+configure:5379: checking for dlltool
+configure:5409: result: no
+configure:5439: checking how to associate runtime and link libraries
+configure:5466: result: printf %s\n
+configure:5527: checking for ar
+configure:5543: found /usr/bin/ar
+configure:5554: result: ar
+configure:5591: checking for archiver @FILE support
+configure:5608: gcc -c -g -O3  conftest.c >&5
+configure:5608: $? = 0
+configure:5611: ar cru libconftest.a @conftest.lst >&5
+configure:5614: $? = 0
+configure:5619: ar cru libconftest.a @conftest.lst >&5
 ar: conftest.o: No such file or directory
-configure:5621: $? = 1
-configure:5633: result: @
-configure:5691: checking for strip
-configure:5707: found /usr/bin/strip
-configure:5718: result: strip
-configure:5790: checking for ranlib
-configure:5806: found /usr/bin/ranlib
-configure:5817: result: ranlib
-configure:5919: checking command to parse /usr/bin/nm -B output from gcc object
-configure:6039: gcc -c -g -O3  conftest.c >&5
-configure:6042: $? = 0
-configure:6046: /usr/bin/nm -B conftest.o \| sed -n -e 's/^.*[ ]\([ABCDGIRSTW][ABCDGIRSTW]*\)[ ][ ]*\([_A-Za-z][_A-Za-z0-9]*\)$/\1 \2 \2/p' | sed '/ __gnu_lto/d' \> conftest.nm
-configure:6049: $? = 0
-configure:6115: gcc -o conftest -g -O3   conftest.c conftstm.o >&5
-configure:6118: $? = 0
-configure:6156: result: ok
-configure:6193: checking for sysroot
-configure:6223: result: no
-configure:6492: checking for mt
-configure:6508: found /bin/mt
-configure:6519: result: mt
-configure:6542: checking if mt is a manifest tool
-configure:6548: mt '-?'
-configure:6556: result: no
-configure:7198: checking how to run the C preprocessor
-configure:7229: gcc -E  conftest.c
-configure:7229: $? = 0
-configure:7243: gcc -E  conftest.c
+configure:5622: $? = 1
+configure:5634: result: @
+configure:5692: checking for strip
+configure:5708: found /usr/bin/strip
+configure:5719: result: strip
+configure:5791: checking for ranlib
+configure:5807: found /usr/bin/ranlib
+configure:5818: result: ranlib
+configure:5920: checking command to parse /usr/bin/nm -B output from gcc object
+configure:6040: gcc -c -g -O3  conftest.c >&5
+configure:6043: $? = 0
+configure:6047: /usr/bin/nm -B conftest.o \| sed -n -e 's/^.*[ ]\([ABCDGIRSTW][ABCDGIRSTW]*\)[ ][ ]*\([_A-Za-z][_A-Za-z0-9]*\)$/\1 \2 \2/p' | sed '/ __gnu_lto/d' \> conftest.nm
+configure:6050: $? = 0
+configure:6116: gcc -o conftest -g -O3   conftest.c conftstm.o >&5
+configure:6119: $? = 0
+configure:6157: result: ok
+configure:6194: checking for sysroot
+configure:6224: result: no
+configure:6493: checking for mt
+configure:6509: found /bin/mt
+configure:6520: result: mt
+configure:6543: checking if mt is a manifest tool
+configure:6549: mt '-?'
+configure:6557: result: no
+configure:7199: checking how to run the C preprocessor
+configure:7230: gcc -E  conftest.c
+configure:7230: $? = 0
+configure:7244: gcc -E  conftest.c
 conftest.c:11:28: fatal error: ac_nonexistent.h: No such file or directory
  #include <ac_nonexistent.h>
                             ^
 compilation terminated.
-configure:7243: $? = 1
+configure:7244: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME ""
@@ -237,15 +237,15 @@ configure: failed program was:
 | #define VERSION "4.22"
 | /* end confdefs.h.  */
 | #include <ac_nonexistent.h>
-configure:7268: result: gcc -E
-configure:7288: gcc -E  conftest.c
-configure:7288: $? = 0
-configure:7302: gcc -E  conftest.c
+configure:7269: result: gcc -E
+configure:7289: gcc -E  conftest.c
+configure:7289: $? = 0
+configure:7303: gcc -E  conftest.c
 conftest.c:11:28: fatal error: ac_nonexistent.h: No such file or directory
  #include <ac_nonexistent.h>
                             ^
 compilation terminated.
-configure:7302: $? = 1
+configure:7303: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME ""
@@ -258,124 +258,124 @@ configure: failed program was:
 | #define VERSION "4.22"
 | /* end confdefs.h.  */
 | #include <ac_nonexistent.h>
-configure:7331: checking for ANSI C header files
-configure:7351: gcc -c -g -O3  conftest.c >&5
-configure:7351: $? = 0
-configure:7424: gcc -o conftest -g -O3   conftest.c  >&5
-configure:7424: $? = 0
-configure:7424: ./conftest
-configure:7424: $? = 0
-configure:7435: result: yes
-configure:7448: checking for sys/types.h
-configure:7448: gcc -c -g -O3  conftest.c >&5
-configure:7448: $? = 0
-configure:7448: result: yes
-configure:7448: checking for sys/stat.h
-configure:7448: gcc -c -g -O3  conftest.c >&5
-configure:7448: $? = 0
-configure:7448: result: yes
-configure:7448: checking for stdlib.h
-configure:7448: gcc -c -g -O3  conftest.c >&5
-configure:7448: $? = 0
-configure:7448: result: yes
-configure:7448: checking for string.h
-configure:7448: gcc -c -g -O3  conftest.c >&5
-configure:7448: $? = 0
-configure:7448: result: yes
-configure:7448: checking for memory.h
-configure:7448: gcc -c -g -O3  conftest.c >&5
-configure:7448: $? = 0
-configure:7448: result: yes
-configure:7448: checking for strings.h
-configure:7448: gcc -c -g -O3  conftest.c >&5
-configure:7448: $? = 0
-configure:7448: result: yes
-configure:7448: checking for inttypes.h
-configure:7448: gcc -c -g -O3  conftest.c >&5
-configure:7448: $? = 0
-configure:7448: result: yes
-configure:7448: checking for stdint.h
-configure:7448: gcc -c -g -O3  conftest.c >&5
-configure:7448: $? = 0
-configure:7448: result: yes
-configure:7448: checking for unistd.h
-configure:7448: gcc -c -g -O3  conftest.c >&5
-configure:7448: $? = 0
-configure:7448: result: yes
-configure:7462: checking for dlfcn.h
-configure:7462: gcc -c -g -O3  conftest.c >&5
-configure:7462: $? = 0
-configure:7462: result: yes
-configure:7668: checking for objdir
-configure:7683: result: .libs
-configure:7950: checking if gcc supports -fno-rtti -fno-exceptions
-configure:7968: gcc -c -g -O3  -fno-rtti -fno-exceptions conftest.c >&5
+configure:7332: checking for ANSI C header files
+configure:7352: gcc -c -g -O3  conftest.c >&5
+configure:7352: $? = 0
+configure:7425: gcc -o conftest -g -O3   conftest.c  >&5
+configure:7425: $? = 0
+configure:7425: ./conftest
+configure:7425: $? = 0
+configure:7436: result: yes
+configure:7449: checking for sys/types.h
+configure:7449: gcc -c -g -O3  conftest.c >&5
+configure:7449: $? = 0
+configure:7449: result: yes
+configure:7449: checking for sys/stat.h
+configure:7449: gcc -c -g -O3  conftest.c >&5
+configure:7449: $? = 0
+configure:7449: result: yes
+configure:7449: checking for stdlib.h
+configure:7449: gcc -c -g -O3  conftest.c >&5
+configure:7449: $? = 0
+configure:7449: result: yes
+configure:7449: checking for string.h
+configure:7449: gcc -c -g -O3  conftest.c >&5
+configure:7449: $? = 0
+configure:7449: result: yes
+configure:7449: checking for memory.h
+configure:7449: gcc -c -g -O3  conftest.c >&5
+configure:7449: $? = 0
+configure:7449: result: yes
+configure:7449: checking for strings.h
+configure:7449: gcc -c -g -O3  conftest.c >&5
+configure:7449: $? = 0
+configure:7449: result: yes
+configure:7449: checking for inttypes.h
+configure:7449: gcc -c -g -O3  conftest.c >&5
+configure:7449: $? = 0
+configure:7449: result: yes
+configure:7449: checking for stdint.h
+configure:7449: gcc -c -g -O3  conftest.c >&5
+configure:7449: $? = 0
+configure:7449: result: yes
+configure:7449: checking for unistd.h
+configure:7449: gcc -c -g -O3  conftest.c >&5
+configure:7449: $? = 0
+configure:7449: result: yes
+configure:7463: checking for dlfcn.h
+configure:7463: gcc -c -g -O3  conftest.c >&5
+configure:7463: $? = 0
+configure:7463: result: yes
+configure:7669: checking for objdir
+configure:7684: result: .libs
+configure:7951: checking if gcc supports -fno-rtti -fno-exceptions
+configure:7969: gcc -c -g -O3  -fno-rtti -fno-exceptions conftest.c >&5
 cc1: warning: command line option '-fno-rtti' is valid for C++/ObjC++ but not for C [enabled by default]
-configure:7972: $? = 0
-configure:7985: result: no
-configure:8312: checking for gcc option to produce PIC
-configure:8319: result: -fPIC -DPIC
-configure:8327: checking if gcc PIC flag -fPIC -DPIC works
-configure:8345: gcc -c -g -O3  -fPIC -DPIC -DPIC conftest.c >&5
-configure:8349: $? = 0
-configure:8362: result: yes
-configure:8391: checking if gcc static flag -static works
-configure:8419: result: yes
-configure:8434: checking if gcc supports -c -o file.o
-configure:8455: gcc -c -g -O3  -o out/conftest2.o conftest.c >&5
-configure:8459: $? = 0
-configure:8481: result: yes
-configure:8489: checking if gcc supports -c -o file.o
-configure:8536: result: yes
-configure:8569: checking whether the gcc linker (/usr/bin/ld) supports shared libraries
-configure:9726: result: yes
-configure:9763: checking whether -lc should be explicitly linked in
-configure:9771: gcc -c -g -O3  conftest.c >&5
-configure:9774: $? = 0
-configure:9789: gcc -shared  -fPIC -DPIC conftest.o  -v -Wl,-soname -Wl,conftest -o conftest 2\>\&1 \| /bin/grep  -lc  \>/dev/null 2\>\&1
-configure:9792: $? = 0
-configure:9806: result: no
-configure:9966: checking dynamic linker characteristics
-configure:10466: gcc -o conftest -g -O3   -Wl,-rpath -Wl,/foo conftest.c  >&5
-configure:10466: $? = 0
-configure:10700: result: GNU/Linux ld.so
-configure:10807: checking how to hardcode library paths into programs
-configure:10832: result: immediate
-configure:11372: checking whether stripping libraries is possible
-configure:11377: result: yes
-configure:11412: checking if libtool supports shared libraries
-configure:11414: result: yes
-configure:11417: checking whether to build shared libraries
-configure:11438: result: yes
-configure:11441: checking whether to build static libraries
-configure:11445: result: yes
-configure:11487: checking sys/inotify.h usability
-configure:11487: gcc -c -g -O3  conftest.c >&5
-configure:11487: $? = 0
-configure:11487: result: yes
-configure:11487: checking sys/inotify.h presence
-configure:11487: gcc -E  conftest.c
-configure:11487: $? = 0
-configure:11487: result: yes
-configure:11487: checking for sys/inotify.h
-configure:11487: result: yes
-configure:11487: checking sys/epoll.h usability
-configure:11487: gcc -c -g -O3  conftest.c >&5
-configure:11487: $? = 0
-configure:11487: result: yes
-configure:11487: checking sys/epoll.h presence
-configure:11487: gcc -E  conftest.c
-configure:11487: $? = 0
-configure:11487: result: yes
-configure:11487: checking for sys/epoll.h
-configure:11487: result: yes
-configure:11487: checking sys/event.h usability
-configure:11487: gcc -c -g -O3  conftest.c >&5
+configure:7973: $? = 0
+configure:7986: result: no
+configure:8313: checking for gcc option to produce PIC
+configure:8320: result: -fPIC -DPIC
+configure:8328: checking if gcc PIC flag -fPIC -DPIC works
+configure:8346: gcc -c -g -O3  -fPIC -DPIC -DPIC conftest.c >&5
+configure:8350: $? = 0
+configure:8363: result: yes
+configure:8392: checking if gcc static flag -static works
+configure:8420: result: yes
+configure:8435: checking if gcc supports -c -o file.o
+configure:8456: gcc -c -g -O3  -o out/conftest2.o conftest.c >&5
+configure:8460: $? = 0
+configure:8482: result: yes
+configure:8490: checking if gcc supports -c -o file.o
+configure:8537: result: yes
+configure:8570: checking whether the gcc linker (/usr/bin/ld) supports shared libraries
+configure:9727: result: yes
+configure:9764: checking whether -lc should be explicitly linked in
+configure:9772: gcc -c -g -O3  conftest.c >&5
+configure:9775: $? = 0
+configure:9790: gcc -shared  -fPIC -DPIC conftest.o  -v -Wl,-soname -Wl,conftest -o conftest 2\>\&1 \| /bin/grep  -lc  \>/dev/null 2\>\&1
+configure:9793: $? = 0
+configure:9807: result: no
+configure:9967: checking dynamic linker characteristics
+configure:10467: gcc -o conftest -g -O3   -Wl,-rpath -Wl,/foo conftest.c  >&5
+configure:10467: $? = 0
+configure:10701: result: GNU/Linux ld.so
+configure:10808: checking how to hardcode library paths into programs
+configure:10833: result: immediate
+configure:11373: checking whether stripping libraries is possible
+configure:11378: result: yes
+configure:11413: checking if libtool supports shared libraries
+configure:11415: result: yes
+configure:11418: checking whether to build shared libraries
+configure:11439: result: yes
+configure:11442: checking whether to build static libraries
+configure:11446: result: yes
+configure:11488: checking sys/inotify.h usability
+configure:11488: gcc -c -g -O3  conftest.c >&5
+configure:11488: $? = 0
+configure:11488: result: yes
+configure:11488: checking sys/inotify.h presence
+configure:11488: gcc -E  conftest.c
+configure:11488: $? = 0
+configure:11488: result: yes
+configure:11488: checking for sys/inotify.h
+configure:11488: result: yes
+configure:11488: checking sys/epoll.h usability
+configure:11488: gcc -c -g -O3  conftest.c >&5
+configure:11488: $? = 0
+configure:11488: result: yes
+configure:11488: checking sys/epoll.h presence
+configure:11488: gcc -E  conftest.c
+configure:11488: $? = 0
+configure:11488: result: yes
+configure:11488: checking for sys/epoll.h
+configure:11488: result: yes
+configure:11488: checking sys/event.h usability
+configure:11488: gcc -c -g -O3  conftest.c >&5
 conftest.c:58:23: fatal error: sys/event.h: No such file or directory
  #include <sys/event.h>
                        ^
 compilation terminated.
-configure:11487: $? = 1
+configure:11488: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME ""
@@ -435,14 +435,14 @@ configure: failed program was:
 | # include <unistd.h>
 | #endif
 | #include <sys/event.h>
-configure:11487: result: no
-configure:11487: checking sys/event.h presence
-configure:11487: gcc -E  conftest.c
+configure:11488: result: no
+configure:11488: checking sys/event.h presence
+configure:11488: gcc -E  conftest.c
 conftest.c:25:23: fatal error: sys/event.h: No such file or directory
  #include <sys/event.h>
                        ^
 compilation terminated.
-configure:11487: $? = 1
+configure:11488: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME ""
@@ -469,16 +469,16 @@ configure: failed program was:
 | #define HAVE_SYS_EPOLL_H 1
 | /* end confdefs.h.  */
 | #include <sys/event.h>
-configure:11487: result: no
-configure:11487: checking for sys/event.h
-configure:11487: result: no
-configure:11487: checking port.h usability
-configure:11487: gcc -c -g -O3  conftest.c >&5
+configure:11488: result: no
+configure:11488: checking for sys/event.h
+configure:11488: result: no
+configure:11488: checking port.h usability
+configure:11488: gcc -c -g -O3  conftest.c >&5
 conftest.c:58:18: fatal error: port.h: No such file or directory
  #include <port.h>
                   ^
 compilation terminated.
-configure:11487: $? = 1
+configure:11488: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME ""
@@ -538,14 +538,14 @@ configure: failed program was:
 | # include <unistd.h>
 | #endif
 | #include <port.h>
-configure:11487: result: no
-configure:11487: checking port.h presence
-configure:11487: gcc -E  conftest.c
+configure:11488: result: no
+configure:11488: checking port.h presence
+configure:11488: gcc -E  conftest.c
 conftest.c:25:18: fatal error: port.h: No such file or directory
  #include <port.h>
                   ^
 compilation terminated.
-configure:11487: $? = 1
+configure:11488: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME ""
@@ -572,63 +572,63 @@ configure: failed program was:
 | #define HAVE_SYS_EPOLL_H 1
 | /* end confdefs.h.  */
 | #include <port.h>
-configure:11487: result: no
-configure:11487: checking for port.h
-configure:11487: result: no
-configure:11487: checking poll.h usability
-configure:11487: gcc -c -g -O3  conftest.c >&5
-configure:11487: $? = 0
-configure:11487: result: yes
-configure:11487: checking poll.h presence
-configure:11487: gcc -E  conftest.c
-configure:11487: $? = 0
-configure:11487: result: yes
-configure:11487: checking for poll.h
-configure:11487: result: yes
-configure:11487: checking sys/select.h usability
-configure:11487: gcc -c -g -O3  conftest.c >&5
-configure:11487: $? = 0
-configure:11487: result: yes
-configure:11487: checking sys/select.h presence
-configure:11487: gcc -E  conftest.c
-configure:11487: $? = 0
-configure:11487: result: yes
-configure:11487: checking for sys/select.h
-configure:11487: result: yes
-configure:11487: checking sys/eventfd.h usability
-configure:11487: gcc -c -g -O3  conftest.c >&5
-configure:11487: $? = 0
-configure:11487: result: yes
-configure:11487: checking sys/eventfd.h presence
-configure:11487: gcc -E  conftest.c
-configure:11487: $? = 0
-configure:11487: result: yes
-configure:11487: checking for sys/eventfd.h
-configure:11487: result: yes
-configure:11487: checking sys/signalfd.h usability
-configure:11487: gcc -c -g -O3  conftest.c >&5
-configure:11487: $? = 0
-configure:11487: result: yes
-configure:11487: checking sys/signalfd.h presence
-configure:11487: gcc -E  conftest.c
-configure:11487: $? = 0
-configure:11487: result: yes
-configure:11487: checking for sys/signalfd.h
-configure:11487: result: yes
-configure:11501: checking for inotify_init
-configure:11501: gcc -o conftest -g -O3   conftest.c  >&5
-configure:11501: $? = 0
-configure:11501: result: yes
-configure:11501: checking for epoll_ctl
-configure:11501: gcc -o conftest -g -O3   conftest.c  >&5
-configure:11501: $? = 0
-configure:11501: result: yes
-configure:11501: checking for kqueue
-configure:11501: gcc -o conftest -g -O3   conftest.c  >&5
-/tmp/cc3UelAz.o: In function `main':
-/home/aston/aston_share/libev/libev-master/conftest.c:65: undefined reference to `kqueue'
+configure:11488: result: no
+configure:11488: checking for port.h
+configure:11488: result: no
+configure:11488: checking poll.h usability
+configure:11488: gcc -c -g -O3  conftest.c >&5
+configure:11488: $? = 0
+configure:11488: result: yes
+configure:11488: checking poll.h presence
+configure:11488: gcc -E  conftest.c
+configure:11488: $? = 0
+configure:11488: result: yes
+configure:11488: checking for poll.h
+configure:11488: result: yes
+configure:11488: checking sys/select.h usability
+configure:11488: gcc -c -g -O3  conftest.c >&5
+configure:11488: $? = 0
+configure:11488: result: yes
+configure:11488: checking sys/select.h presence
+configure:11488: gcc -E  conftest.c
+configure:11488: $? = 0
+configure:11488: result: yes
+configure:11488: checking for sys/select.h
+configure:11488: result: yes
+configure:11488: checking sys/eventfd.h usability
+configure:11488: gcc -c -g -O3  conftest.c >&5
+configure:11488: $? = 0
+configure:11488: result: yes
+configure:11488: checking sys/eventfd.h presence
+configure:11488: gcc -E  conftest.c
+configure:11488: $? = 0
+configure:11488: result: yes
+configure:11488: checking for sys/eventfd.h
+configure:11488: result: yes
+configure:11488: checking sys/signalfd.h usability
+configure:11488: gcc -c -g -O3  conftest.c >&5
+configure:11488: $? = 0
+configure:11488: result: yes
+configure:11488: checking sys/signalfd.h presence
+configure:11488: gcc -E  conftest.c
+configure:11488: $? = 0
+configure:11488: result: yes
+configure:11488: checking for sys/signalfd.h
+configure:11488: result: yes
+configure:11502: checking for inotify_init
+configure:11502: gcc -o conftest -g -O3   conftest.c  >&5
+configure:11502: $? = 0
+configure:11502: result: yes
+configure:11502: checking for epoll_ctl
+configure:11502: gcc -o conftest -g -O3   conftest.c  >&5
+configure:11502: $? = 0
+configure:11502: result: yes
+configure:11502: checking for kqueue
+configure:11502: gcc -o conftest -g -O3   conftest.c  >&5
+/tmp/ccFCYIm5.o: In function `main':
+/home/aston/aston_share/Code_design_and_debug_learning/开源项目/libev/libev-master/conftest.c:65: undefined reference to `kqueue'
 collect2: error: ld returned 1 exit status
-configure:11501: $? = 1
+configure:11502: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME ""
@@ -698,13 +698,13 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:11501: result: no
-configure:11501: checking for port_create
-configure:11501: gcc -o conftest -g -O3   conftest.c  >&5
-/tmp/ccpzQKnz.o: In function `main':
-/home/aston/aston_share/libev/libev-master/conftest.c:65: undefined reference to `port_create'
+configure:11502: result: no
+configure:11502: checking for port_create
+configure:11502: gcc -o conftest -g -O3   conftest.c  >&5
+/tmp/cc19cV4e.o: In function `main':
+/home/aston/aston_share/Code_design_and_debug_learning/开源项目/libev/libev-master/conftest.c:65: undefined reference to `port_create'
 collect2: error: ld returned 1 exit status
-configure:11501: $? = 1
+configure:11502: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME ""
@@ -774,40 +774,40 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:11501: result: no
-configure:11501: checking for poll
-configure:11501: gcc -o conftest -g -O3   conftest.c  >&5
-configure:11501: $? = 0
-configure:11501: result: yes
-configure:11501: checking for select
-configure:11501: gcc -o conftest -g -O3   conftest.c  >&5
-configure:11501: $? = 0
-configure:11501: result: yes
-configure:11501: checking for eventfd
-configure:11501: gcc -o conftest -g -O3   conftest.c  >&5
-configure:11501: $? = 0
-configure:11501: result: yes
-configure:11501: checking for signalfd
-configure:11501: gcc -o conftest -g -O3   conftest.c  >&5
-configure:11501: $? = 0
-configure:11501: result: yes
-configure:11513: checking for clock_gettime
-configure:11513: gcc -o conftest -g -O3   conftest.c  >&5
-configure:11513: $? = 0
-configure:11513: result: yes
-configure:11617: checking for nanosleep
-configure:11617: gcc -o conftest -g -O3   conftest.c  >&5
-configure:11617: $? = 0
-configure:11617: result: yes
-configure:11692: checking for library containing floor
-configure:11723: gcc -o conftest -g -O3   conftest.c  >&5
+configure:11502: result: no
+configure:11502: checking for poll
+configure:11502: gcc -o conftest -g -O3   conftest.c  >&5
+configure:11502: $? = 0
+configure:11502: result: yes
+configure:11502: checking for select
+configure:11502: gcc -o conftest -g -O3   conftest.c  >&5
+configure:11502: $? = 0
+configure:11502: result: yes
+configure:11502: checking for eventfd
+configure:11502: gcc -o conftest -g -O3   conftest.c  >&5
+configure:11502: $? = 0
+configure:11502: result: yes
+configure:11502: checking for signalfd
+configure:11502: gcc -o conftest -g -O3   conftest.c  >&5
+configure:11502: $? = 0
+configure:11502: result: yes
+configure:11514: checking for clock_gettime
+configure:11514: gcc -o conftest -g -O3   conftest.c  >&5
+configure:11514: $? = 0
+configure:11514: result: yes
+configure:11618: checking for nanosleep
+configure:11618: gcc -o conftest -g -O3   conftest.c  >&5
+configure:11618: $? = 0
+configure:11618: result: yes
+configure:11693: checking for library containing floor
+configure:11724: gcc -o conftest -g -O3   conftest.c  >&5
 conftest.c:44:6: warning: conflicting types for built-in function 'floor' [enabled by default]
  char floor ();
       ^
-/tmp/cc2RLFxA.o: In function `main':
-/home/aston/aston_share/libev/libev-master/conftest.c:48: undefined reference to `floor'
+/tmp/ccNJuJ9i.o: In function `main':
+/home/aston/aston_share/Code_design_and_debug_learning/开源项目/libev/libev-master/conftest.c:48: undefined reference to `floor'
 collect2: error: ld returned 1 exit status
-configure:11723: $? = 1
+configure:11724: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME ""
@@ -860,15 +860,15 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:11723: gcc -o conftest -g -O3   conftest.c -lm   >&5
+configure:11724: gcc -o conftest -g -O3   conftest.c -lm   >&5
 conftest.c:44:6: warning: conflicting types for built-in function 'floor' [enabled by default]
  char floor ();
       ^
-configure:11723: $? = 0
-configure:11740: result: -lm
-configure:11864: checking that generated files are newer than configure
-configure:11870: result: done
-configure:11897: creating ./config.status
+configure:11724: $? = 0
+configure:11741: result: -lm
+configure:11865: checking that generated files are newer than configure
+configure:11871: result: done
+configure:11898: creating ./config.status
 
 ## ---------------------- ##
 ## Running config.status. ##
@@ -997,7 +997,7 @@ lt_cv_to_tool_file_cmd=func_convert_file_noop
 ## Output variables. ##
 ## ----------------- ##
 
-ACLOCAL='${SHELL} /home/aston/aston_share/libev/libev-master/missing aclocal-1.14'
+ACLOCAL='${SHELL} /home/aston/aston_share/Code_design_and_debug_learning/开源项目/libev/libev-master/missing aclocal-1.14'
 AMDEPBACKSLASH='\'
 AMDEP_FALSE='#'
 AMDEP_TRUE=''
@@ -1007,9 +1007,9 @@ AM_DEFAULT_V='$(AM_DEFAULT_VERBOSITY)'
 AM_DEFAULT_VERBOSITY='1'
 AM_V='$(V)'
 AR='ar'
-AUTOCONF='${SHELL} /home/aston/aston_share/libev/libev-master/missing autoconf'
-AUTOHEADER='${SHELL} /home/aston/aston_share/libev/libev-master/missing autoheader'
-AUTOMAKE='${SHELL} /home/aston/aston_share/libev/libev-master/missing automake-1.14'
+AUTOCONF='${SHELL} /home/aston/aston_share/Code_design_and_debug_learning/开源项目/libev/libev-master/missing autoconf'
+AUTOHEADER='${SHELL} /home/aston/aston_share/Code_design_and_debug_learning/开源项目/libev/libev-master/missing autoheader'
+AUTOMAKE='${SHELL} /home/aston/aston_share/Code_design_and_debug_learning/开源项目/libev/libev-master/missing automake-1.14'
 AWK='mawk'
 CC='gcc'
 CCDEPMODE='depmode=gcc3'
@@ -1044,7 +1044,7 @@ LTLIBOBJS=''
 MAINT='#'
 MAINTAINER_MODE_FALSE=''
 MAINTAINER_MODE_TRUE='#'
-MAKEINFO='${SHELL} /home/aston/aston_share/libev/libev-master/missing makeinfo'
+MAKEINFO='${SHELL} /home/aston/aston_share/Code_design_and_debug_learning/开源项目/libev/libev-master/missing makeinfo'
 MANIFEST_TOOL=':'
 MKDIR_P='/bin/mkdir -p'
 NM='/usr/bin/nm -B'
@@ -1100,7 +1100,7 @@ host_vendor='pc'
 htmldir='${docdir}'
 includedir='${prefix}/include'
 infodir='${datarootdir}/info'
-install_sh='${SHELL} /home/aston/aston_share/libev/libev-master/install-sh'
+install_sh='${SHELL} /home/aston/aston_share/Code_design_and_debug_learning/开源项目/libev/libev-master/install-sh'
 libdir='${exec_prefix}/lib'
 libexecdir='${exec_prefix}/libexec'
 localedir='${datarootdir}/locale'

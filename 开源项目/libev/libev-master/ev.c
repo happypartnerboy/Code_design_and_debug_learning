@@ -840,7 +840,7 @@ typedef int ecb_bool;
   #define ecb_expect(expr,value)         __builtin_expect ((expr),(value))
 #else
   #define ecb_expect(expr,value)         (expr)
-#endif
+#endif 
 
 #if ECB_GCC_VERSION(3,1) || ECB_CLANG_BUILTIN(__builtin_prefetch)
   #define ecb_prefetch(addr,rw,locality) __builtin_prefetch (addr, rw, locality)
@@ -1756,7 +1756,7 @@ ev_realloc (void *ptr, long size)
 #define EV_ANFD_REIFY 1
 
 /* file descriptor info structure */
-typedef struct
+      typedef struct
 {
   WL head;
   unsigned char events; /* the events watched for */
@@ -3706,7 +3706,6 @@ ev_run (EV_P_ int flags)
 void
 ev_break (EV_P_ int how) EV_THROW
 {
-
   loop_done = how;
 }
 
@@ -3812,7 +3811,7 @@ pri_adjust (EV_P_ W w)
 inline_speed void
 ev_start (EV_P_ W w, int active)
 {
-  pri_adjust (EV_A_ w);
+  pri_adjust (EV_A_ w);  
   w->active = active;
   ev_ref (EV_A);
 }
@@ -3827,29 +3826,36 @@ ev_stop (EV_P_ W w)
 /*****************************************************************************/
 
 void noinline
-ev_io_start (EV_P_ ev_io *w) EV_THROW
-{
+ev_io_start (EV_P_  ev_io *w) EV_THROW
+{	
+	printf("func here %s : %d\n",__FILE__, __LINE__);
+	int fd = w->fd;
+	 printf("func here %s : %d\n",__FILE__, __LINE__);
+	if (expect_false (ev_is_active (w)))
+		return;
+	 printf("func here %s : %d\n",__FILE__, __LINE__);
+	assert (("libev: ev_io_start called with negative fd", fd >= 0));
+	assert (("libev: ev_io_start called with illegal event mask", !(w->events & ~(EV__IOFDSET | EV_READ | EV_WRITE))));
+
+	EV_FREQUENT_CHECK;
+	printf("func here %s : %d\n",__FILE__, __LINE__);
+	ev_start (EV_A_ (W)w, 1);
+	printf("func here %s : %d\n",__FILE__, __LINE__);
+/*
+	需要打印数据看一下
+*/
 	
-  int fd = w->fd;
-  if (expect_false (ev_is_active (w)))
-    return;
-  printf("hello word\n");
-  assert (("libev: ev_io_start called with negative fd", fd >= 0));
-  assert (("libev: ev_io_start called with illegal event mask", !(w->events & ~(EV__IOFDSET | EV_READ | EV_WRITE))));
+	array_needsize (ANFD, anfds, anfdmax, fd + 1, array_init_zero);
+	printf("func here %s : %d\n",__FILE__, __LINE__);
+	wlist_add (&anfds[fd].head, (WL)w);
+	printf("func here %s : %d\n",__FILE__, __LINE__);
+	/* common bug, apparently */
+	assert (("libev: ev_io_start called with corrupted watcher", ((WL)w)->next != (WL)w));
 
-  EV_FREQUENT_CHECK;
-
-  ev_start (EV_A_ (W)w, 1);
-  array_needsize (ANFD, anfds, anfdmax, fd + 1, array_init_zero);
-  wlist_add (&anfds[fd].head, (WL)w);
-
-  /* common bug, apparently */
-  assert (("libev: ev_io_start called with corrupted watcher", ((WL)w)->next != (WL)w));
-
-  fd_change (EV_A_ fd, w->events & EV__IOFDSET | EV_ANFD_REIFY);
-  w->events &= ~EV__IOFDSET;
-
-  EV_FREQUENT_CHECK;
+	fd_change (EV_A_ fd, w->events & EV__IOFDSET | EV_ANFD_REIFY);
+	w->events &= ~EV__IOFDSET;
+	printf("func here %s : %d\n",__FILE__, __LINE__);
+	EV_FREQUENT_CHECK;
 }
 
 void noinline

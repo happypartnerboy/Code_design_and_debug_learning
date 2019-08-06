@@ -1,0 +1,78 @@
+%option prefix="cgdbhelp_"
+%option outfile="lex.yy.c"
+%option case-insensitive
+%option noyywrap
+%option nounput
+%option noinput
+
+D                       [0-9]
+L                       [a-zA-Z_]
+
+%{
+
+/* System Includes */
+#include <stdio.h>
+#include "tokenizer.h"
+
+%}
+
+%%
+"CGDB"                  { return(TOKENIZER_KEYWORD); }
+               
+[`']Statement'          { return TOKENIZER_KEYWORD; }
+[`']Type'               { return TOKENIZER_TYPE; }
+[`']Constant'           { return TOKENIZER_LITERAL; }
+[`']Comment'            { return TOKENIZER_COMMENT; }
+[`']PreProc'            { return TOKENIZER_DIRECTIVE; }
+[`']Normal'             { return TOKENIZER_TEXT; }
+[`']IncSearch'          { return TOKENIZER_SEARCH; }
+[`']StatusLine'         { return TOKENIZER_STATUS_BAR; }
+[`']ExecutingLineArrow' { return TOKENIZER_EXECUTING_LINE_ARROW; }
+[`']SelectedLineArrow'  { return TOKENIZER_SELECTED_LINE_ARROW; }
+[`']ExecutingLineHighlight' { return TOKENIZER_EXECUTING_LINE_HIGHLIGHT; }
+[`']SelectedLineHighlight'  { return TOKENIZER_SELECTED_LINE_HIGHLIGHT; }
+[`']ExecutingLineBlock' { return TOKENIZER_EXECUTING_LINE_BLOCK; }
+[`']SelectedLineBlock'  { return TOKENIZER_SELECTED_LINE_BLOCK; }
+[`']Breakpoint'         { return TOKENIZER_ENABLED_BREAKPOINT; }
+[`']DisabledBreakpoint' { return TOKENIZER_DISABLED_BREAKPOINT; }
+[`']SelectedLineNr'     { return TOKENIZER_SELECTED_LINE_NUMBER; }
+[`']ScrollModeStatus'   { return TOKENIZER_SCROLL_MODE_STATUS; }
+[`']Logo'               { return TOKENIZER_LOGO; }
+
+"DarkBlue"              { return TOKENIZER_COLOR; }
+"DarkGreen"             { return TOKENIZER_COLOR; }
+"DarkCyan"              { return TOKENIZER_COLOR; }
+"DarkRed"               { return TOKENIZER_COLOR; }
+"DarkMagenta"           { return TOKENIZER_COLOR; }
+"Brown"                 { return TOKENIZER_COLOR; }
+"DarkYellow"            { return TOKENIZER_COLOR; }
+"LightGray"             { return TOKENIZER_COLOR; }
+"LightGrey"             { return TOKENIZER_COLOR; }
+"Gray"                  { return TOKENIZER_COLOR; }
+"Grey"                  { return TOKENIZER_COLOR; }
+"DarkGray"              { return TOKENIZER_COLOR; }
+"DarkGrey"              { return TOKENIZER_COLOR; }
+"Blue"                  { return TOKENIZER_COLOR; }
+"LightBlue"             { return TOKENIZER_COLOR; }
+"Green"                 { return TOKENIZER_COLOR; }
+"LightGreen"            { return TOKENIZER_COLOR; }
+"Cyan"                  { return TOKENIZER_COLOR; }
+"LightCyan"             { return TOKENIZER_COLOR; }
+"Red"                   { return TOKENIZER_COLOR; }
+"LightRed"              { return TOKENIZER_COLOR; }
+"Magenta"               { return TOKENIZER_COLOR; }
+"LightMagenta"          { return TOKENIZER_COLOR; }
+"Yellow"                { return TOKENIZER_COLOR; }
+"LightYellow"           { return TOKENIZER_COLOR; }
+"White"                 { return TOKENIZER_COLOR; }
+
+^[=]+                   { return(TOKENIZER_COMMENT); }
+^[\*]+                  { return(TOKENIZER_COMMENT); }
+
+\n					    { return(TOKENIZER_NEWLINE); }
+\r\n 			        { return(TOKENIZER_NEWLINE); }
+\r 						{ return(TOKENIZER_NEWLINE); }
+[ \t\v\f]               { return(TOKENIZER_TEXT);    }
+{L}+                    { return(TOKENIZER_TEXT); 	 }
+.                       { return(TOKENIZER_TEXT);    }
+%%
